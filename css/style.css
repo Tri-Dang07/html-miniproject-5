@@ -1,0 +1,153 @@
+/* Thiết lập định dạng cơ bản toàn trang */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Định dạng phân vùng Header */
+.project-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.project-header h1 {
+  color: #1a73e8;
+  margin-bottom: 5px;
+}
+.project-header p {
+  color: #5f6368;
+  margin: 0;
+}
+
+/* Định dạng hộp chứa Form chính */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng cho các khung nhóm trường dữ liệu (Fieldset) */
+fieldset {
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+legend {
+  font-weight: bold;
+  color: #1a73e8;
+  padding: 0 10px;
+}
+.no-border {
+  border: none;
+  padding: 0;
+}
+
+/* Định dạng hàng nhập liệu (Form Group) */
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #202124;
+}
+.required {
+  color: #d93025;
+}
+
+/* Định dạng chung cho các ô Input văn bản, Email, Password và Thẻ Select */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 4px rgba(26, 115, 232, 0.3);
+}
+
+/* Cấu hình chiều cao co giãn cho Textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Định dạng vùng nút Radio giới tính */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  padding-top: 5px;
+}
+.radio-label {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal !important;
+  cursor: pointer;
+}
+
+/* Định dạng vùng Checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.checkbox-group input[type="checkbox"] {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.checkbox-group label {
+  font-weight: normal;
+  font-size: 14px;
+  color: #5f6368;
+  cursor: pointer;
+}
+
+/* Định dạng nút gửi tài liệu (Submit Button) */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #1a73e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button[type="submit"]:hover {
+  background-color: #1557b0;
+}
+
+/* Văn bản ghi chú hướng dẫn nhỏ */
+.form-note {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #70757a;
+}
+
+/* Phân vùng chân trang */
+.project-footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #70757a;
+}
