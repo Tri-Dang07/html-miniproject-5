@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-project 5: Form Đăng Ký & Liên Hệ Toàn Diện</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="project-header">
+    <h1>HỆ THỐNG ĐĂNG KÝ THÀNH VIÊN</h1>
+    <p>Vui lòng điền đầy đủ và chính xác các thông tin dưới đây để kết nối với ban quản trị.</p>
+  </header>
+
+  <main class="form-container">
+    <form action="#" method="POST" id="mainRegistrationForm">
+      
+      <fieldset>
+        <legend>1. Tài khoản & Bảo mật</legend>
+        
+        <div class="form-group">
+          <label for="hoTen">Họ và tên của bạn: <span class="required">*</span></label>
+          <input type="text" id="hoTen" name="hoTen" placeholder="Ví dụ: Nguyễn Văn A" required minlength="4">
+          <p class="form-note">Nhập tên hợp pháp của bạn, tối thiểu 4 ký tự.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Địa chỉ Email: <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="nguyenvana@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="matKhau">Mật khẩu tài khoản: <span class="required">*</span></label>
+          <input type="password" id="matKhau" name="matKhau" placeholder="Tối thiểu 8 ký tự" required minlength="8">
+          <p class="form-note">Mật khẩu cần có độ dài an toàn để bảo vệ quyền riêng tư.</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Thông tin chi tiết</legend>
+
+        <div class="form-group">
+          <label>Giới tính của bạn:</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="gioiTinh" value="Nam" checked> Nam
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gioiTinh" value="Nữ"> Nữ
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gioiTinh" value="Khác"> Khác
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="nganhHoc">Chuyên ngành mong muốn:</label>
+          <select id="nganhHoc" name="nganhHoc" required>
+            <option value="" disabled selected>-- Chọn một chuyên ngành chuyên môn --</option>
+            <option value="cntt">Công nghệ thông tin (Lập trình Web)</option>
+            <option value="tkdh">Thiết kế đồ họa (UI/UX)</option>
+            <option value="mkt">Truyền thông & Digital Marketing</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="loiNhan">Lời nhắn hoặc mục tiêu học tập:</label>
+          <textarea id="loiNhan" name="loiNhan" placeholder="Hãy chia sẻ một chút về mục tiêu hoặc kinh nghiệm hiện tại của bạn..."></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="no-border">
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="dongY" name="dongY" required>
+          <label for="dongY">Tôi cam kết mọi thông tin khai báo trên là chính xác và đồng ý với điều khoản sử dụng hệ thống.</label>
+        </div>
+
+        <button type="submit" id="btnSubmit">GỬI HỒ SƠ ĐĂNG KÝ</button>
+      </fieldset>
+
+    </form>
+  </main>
+
+  <footer class="project-footer-bottom">
+    <p>© 2026 Học viên Mini-Project 5. Bảo lưu mọi quyền.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
